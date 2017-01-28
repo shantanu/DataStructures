@@ -1,8 +1,8 @@
 package LinkedList;
 
-public class LinkedList {
+public class LinkedList<T extends Comparable<T>> {
 	
-	private StringNode head;
+	private Node<T> head;
 	private int length;
 	
 	public LinkedList () {
@@ -19,19 +19,19 @@ public class LinkedList {
 	}
 	
 	//addToFront
-	public void addToFront(String data) {
-		StringNode n = new StringNode(data);
+	public void addToFront(T data) {
+		Node<T> n = new Node(data);
 		n.next = head;
 		head = n;
 	}
 	
 	//addAfter
-	public void addAfter(String s, String target) {
+	public void addAfter(T s, T target) {
 		if (search(s) == false) return;
 		else {
-			for (StringNode n = head; n != null; n = n.next) {
+			for (Node<T> n = head; n != null; n = n.next) {
 				if (n.data.equals(s)) {
-					StringNode created = new StringNode(target);
+					Node<T> created = new Node<T>(target);
 					created.next = n.next;
 					n.next = created;
 					return;
@@ -50,20 +50,21 @@ public class LinkedList {
 	//addToRear
 	 
 	//get
-	/*public String get(int x) {
-		//implement
-		for (int i = 0; i < x; i++) {
-			
+	public T get(int x) {
+		if (x > length - 1 || x < 0) throw new IllegalArgumentException();
+		Node<T> tmp = head;
+		for (int i = 1; i < x; i++) {
+			tmp = tmp.next;
 		}
-	}*/
+		return tmp.data;
+	}
 	
 	//search
-	
-	public boolean search(String target) {
+	public boolean search(T target) {
 		return search(head, target);
 	}
 	
-	private boolean search (StringNode newHead, String target) {
+	private boolean search (Node<T> newHead, T target) {
 		if (newHead == null) return false;
 		if (newHead.data.equals(target)) return true;
 		else return search(newHead.next, target);
