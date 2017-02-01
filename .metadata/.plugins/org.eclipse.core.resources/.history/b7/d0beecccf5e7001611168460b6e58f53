@@ -11,7 +11,7 @@ public class LinkedList<T extends Comparable<T>> {
 		length = 0;
 	}
 	
-	public void deleteFromFront() throws MyCoolException {
+	public void deleteFromFront() {
 		if (head != null) {
 			head = head.next;
 			return;
@@ -81,18 +81,8 @@ public class LinkedList<T extends Comparable<T>> {
 	
 	public static void main (String[] args) {
 		LinkedList l = new LinkedList();
-		try {
-			Integer.parseInt("hi");
-			l.deleteFromFront();
-		}
-		catch (MyCoolException mce) {
-			mce.printStackTrace();
-		}
-		catch (NumberFormatException e) {
-			
-		}
-		catch (Exception e) {
-					}
+		
+		l.deleteFromFront();
 	}
 	
 	
