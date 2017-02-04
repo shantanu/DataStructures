@@ -4,7 +4,7 @@ public class CircularLinkedList<T extends Comparable<T>> {
 	Node<T> tail;
 	
 	public void addToFront (T data) {
-		Node<T> n = new Node<T>(data);
+		Node n = new Node(data);
 		if (tail == null) {
 			
 			n.next = tail;
@@ -17,7 +17,7 @@ public class CircularLinkedList<T extends Comparable<T>> {
 	}
 	
 	public void addToRear (T data) {
-		Node<T> n = new Node<T>(data);
+		Node n = new Node(data);
 		if (tail == null) {
 			
 			n.next = tail;
@@ -32,7 +32,7 @@ public class CircularLinkedList<T extends Comparable<T>> {
 	
 	public boolean search (T target) {
 		if (tail == null) return false;
-		for (Node<T> n = tail.next; n != tail; n = n.next){
+		for (Node n = tail.next; n != tail; n = n.next){
 			if (n.data.equals(target)) return true;
 		}
 		if (tail.data.equals(target)) return true;

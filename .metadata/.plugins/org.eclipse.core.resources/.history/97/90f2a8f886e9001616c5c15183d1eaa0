@@ -80,7 +80,7 @@ public class LinkedList<T extends Comparable<T>> {
 	//equals
 	
 	public static void main (String[] args) {
-		LinkedList<Integer> l = new LinkedList<Integer>();
+		LinkedList l = new LinkedList();
 		try {
 			Integer.parseInt("hi");
 			l.deleteFromFront();
@@ -92,8 +92,7 @@ public class LinkedList<T extends Comparable<T>> {
 			
 		}
 		catch (Exception e) {
-			
-		}
+					}
 	}
 	
 	

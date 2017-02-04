@@ -1,0 +1,32 @@
+package Stack;
+
+public class Stack<T extends Comparable<T>> {
+	/*
+	 * LIFO - Last in first out
+	 * Essential operations:
+	 * push - put things in 
+	 * pop - take things out
+	 * peek - non-destructive pop
+	 */
+	Node<T> head;
+	
+	public boolean isEmpty () {
+		return head==null;
+	}
+	
+	public void push(T data) {
+		Node<T> n = new Node<T>(data);
+		n.next = head;
+		head = n;
+	}
+	
+	public T pop() {
+		T popped = head.data;
+		head = head.next;
+		return popped;
+	}
+	
+	public T peek() {
+		return head.data;
+	}
+}
