@@ -1,0 +1,27 @@
+package Pset3;
+import java.util.*;
+public class CLL {
+	private Node rear; //pointer to the last node of CLL
+	public boolean delete (String target) {
+		if (rear == null) throw new NoSuchElementException();
+		
+		
+		if (rear.next == rear && rear.data.equals(target)) {
+			rear = null;
+			return true;
+		}
+		
+		for(Node n = rear.next; n != rear; n = n.next){
+			if (n.next.data.equals(target)) {
+				n.next = n.next.next;
+				return true;
+			}
+		}
+		if (rear.next.data.equals(target)){
+			rear.next = rear.next.next;
+			return true;
+		}
+		return false;
+		
+	}
+}

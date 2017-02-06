@@ -38,6 +38,4 @@ public class CircularLinkedList<T extends Comparable<T>> {
 		if (tail.data.equals(target)) return true;
 		return false;
 	}
-	
-	
 }

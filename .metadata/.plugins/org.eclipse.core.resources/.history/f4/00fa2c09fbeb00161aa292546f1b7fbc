@@ -1,0 +1,33 @@
+package Pset3;
+
+public class DLLStatic {
+	public static DLLNode moveToFront(DLLNode front, DLLNode target) {
+		while (target.prev != null) {
+			DLLNode swapNode = target.prev;
+			target.prev = swapNode.prev;
+			target.prev.next = target;
+			swapNode.prev = target;
+			swapNode.next = target.next;
+			if (target.next != null) {
+				target.next.prev = swapNode;
+
+			}
+			target.next = swapNode;
+		}
+		return target;
+	}
+	public static DLLNode reverse(DLLNode front) {
+		if (front == null) 
+			return null;
+		
+		for (DLLNode n = front; n != null; n = n.prev) {
+			DLLNode tmp = n.prev;
+			n.prev = n.next;
+			n.next = tmp;
+			if (n.prev == null) {
+				return n;
+			}
+		}
+		return front;
+	}
+}
