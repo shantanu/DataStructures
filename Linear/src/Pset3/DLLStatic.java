@@ -3,19 +3,19 @@ package Pset3;
 public class DLLStatic {
 	// PROBLEM 3
 	public static DLLNode moveToFront(DLLNode front, DLLNode target) {
-		while (target.prev != null) {
-			DLLNode swapNode = target.prev;
-			target.prev = swapNode.prev;
-			target.prev.next = target;
-			swapNode.prev = target;
-			swapNode.next = target.next;
-			if (target.next != null) {
-				target.next.prev = swapNode;
-
-			}
-			target.next = swapNode;
+		if (target == front) {
+			return front;
 		}
-		return target;
+		else {
+			
+			target.prev.next = target.next;
+			if (target.next != null)
+				target.next.prev = target.prev;
+			target.next = front;
+			front.prev = target;
+			target.prev = null;
+			return target;
+		}
 	}
 	//PROBLEM 4
 	public static DLLNode reverse(DLLNode front) {
@@ -62,17 +62,18 @@ public class DLLStatic {
 	}
 	//PROBLEM 7
 	public static Node reverse(Node front){
-		
-		
-		if (front.next != null) {
-			Node rev = reverse(front.next);
-			
-			rev.next = front;
+		if (front == null)
 			return null;
-		}
-		else {
+		if (front.next == null)
 			return front;
+		else {
+			Node sec = front.next;
+			Node rev = reverse(front.next);
+			sec.next = front;
+			front.next = null;
+			return rev;
 		}
+		
 	}
 	
 	
@@ -92,13 +93,31 @@ public class DLLStatic {
 		n5.prev = n4;
 		printList(n1);
 		System.out.println();
-		printList(moveToFront(n1, new DLLNode("Hi", null, null)));
-		//printList(reverse(n1));
+		printList(moveToFront(n1, n5));
+		System.out.println();
+		printList(reverse(n5));
+		
+		Node n01 = new Node("Hi", null);
+		Node n02 = new Node("My", null);
+		Node n03 = new Node("Name", null);
+		Node n04 = new Node("Is", null);
+		Node n05 = new Node("Java", null);
+		n01.next = n02;
+		n02.next = n03;
+		n03.next = n04;
+		n04.next = n05;
+		System.out.println();
+		printList(reverse(n01));
 		
 	}
 
 	public static void printList(DLLNode front){
 		for(DLLNode tmp = front; tmp!=null; tmp = tmp.next){
+			System.out.print(tmp.data + " ");
+		}
+	}
+	public static void printList(Node front){
+		for(Node tmp = front; tmp!=null; tmp = tmp.next){
 			System.out.print(tmp.data + " ");
 		}
 	}
