@@ -1,0 +1,9 @@
+package Queue;
+
+public class Queue<T> {
+	Node<T> tail;
+	
+	public void enqueue (T data) {
+		Node<T> = 
+	}
+}

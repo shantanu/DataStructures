@@ -1,0 +1,49 @@
+package Stack;
+
+public class SyntaxChecker {
+	public static void main(String[] args) {
+		System.out.println(parenMatch("{[]()"));
+	}
+	
+	public static boolean parenMatch(String str) {
+		Stack<Character> s = new Stack<Character>();
+		
+		for (int i = 0; i < str.length(); i++) {
+			if (str.charAt(i) == '(' || str.charAt(i) == '[' || str.charAt(i) == '{') {
+				s.push(str.charAt(i));
+				continue;
+			}
+			try{
+				if (str.charAt(i) == ')'){
+					char cur = s.pop();
+					if (cur == '(') 
+						continue;
+					else
+						return false;
+					
+				}
+				if (str.charAt(i) == ']') {
+					char cur = s.pop();
+					if (cur == '[') 
+						continue;
+					else
+						return false;
+				}
+				
+				if (str.charAt(i) == '}') {
+					char cur = s.pop();
+					if (cur == '{') 
+						continue;
+					else 
+						return false;
+				}
+			} 
+			catch (Exception e) {
+				return false;
+			}
+		}
+		//if (s.isEmpty())
+			return true;
+		//return false;
+	}
+}
