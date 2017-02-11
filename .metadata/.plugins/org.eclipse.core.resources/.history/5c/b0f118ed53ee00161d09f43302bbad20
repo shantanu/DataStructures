@@ -66,9 +66,8 @@ public class DLLStatic {
 		}
 		else {
 			frontL1.next = merge(frontL1.next, frontL2.next);
-			return frontL1;
 		}
-		
+		return null;
 	}
 	//PROBLEM 7
 	public static Node reverse(Node front){

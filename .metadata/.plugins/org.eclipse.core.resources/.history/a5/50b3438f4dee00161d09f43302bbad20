@@ -4,8 +4,8 @@ public class CLL {
 	private Node rear; //pointer to the last node of CLL
 	
 	//PROBLEM 1
-	public boolean delete (String target) throws NoSuchElementException {
-		if (rear == null) throw new NoSuchElementException();
+	public boolean delete (String target) {
+		if (rear == null) return false;
 		//rear is the only element in the list and it is the target
 		if (rear.next == rear && rear.data.equals(target)) {
 			rear = null;
@@ -16,7 +16,7 @@ public class CLL {
 			rear.next = rear.next.next;
 			return true;
 		}
-		//target is anywhere other than front, including rear
+		//target is anywhere other than front
 		for(Node n = rear.next; n != rear; n = n.next){
 			if (n.next.data.equals(target)) {
 				n.next = n.next.next;

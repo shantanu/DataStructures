@@ -50,25 +50,15 @@ public class DLLStatic {
 		if (frontL1 == null && frontL2 == null) {
 			return null;
 		}
-		if (frontL1 == null && frontL2 != null) {
-			return frontL2;
-		}	
-		if (frontL2 == null && frontL1 != null) {
-			return frontL1;
-		}
-		if (frontL1.data > frontL2.data){
+		if (frontL1 == null || frontL1.data >= frontL2.data){
 			frontL2.next = merge(frontL1, frontL2.next);
 			return frontL2;
 		}
-		else if (frontL2.data > frontL1.data){
+		if (frontL2 == null || frontL2.data > frontL1.data){
 			frontL1.next = merge(frontL1.next, frontL2);
 			return frontL1;
 		}
-		else {
-			frontL1.next = merge(frontL1.next, frontL2.next);
-			return frontL1;
-		}
-		
+		return null;
 	}
 	//PROBLEM 7
 	public static Node reverse(Node front){
