@@ -141,20 +141,20 @@ public class Solitaire {
 	 */
 	void tripleCut() {
 		// COMPLETE THIS METHOD
-		if (deckRear.next.cardValue == 27 || deckRear.next.cardValue == 27) {
+		if (deckRear.next.cardValue == 27 || deckRear.next.cardValue == 28) {
 			for (CardNode n = deckRear.next.next; n != deckRear; n = n.next) {
-				if (n.cardValue == 28 || n.cardValue == 27) {
+				if (n.cardValue == 27 || n.cardValue == 28) {
 					deckRear = n;
 					return;
 				}
 			}
-			if (deckRear.cardValue == 28 || deckRear.cardValue == 27) {
+			if (deckRear.cardValue == 27 || deckRear.cardValue == 28) {
 				return;
 			}
 		}
-		if (deckRear.cardValue == 28 || deckRear.cardValue == 28) {
+		if (deckRear.cardValue == 27 || deckRear.cardValue == 28) {
 			for (CardNode n = deckRear.next; n != deckRear; n = n.next) {
-				if (n.next.cardValue == 27 || n.next.cardValue == 27) {
+				if (n.next.cardValue == 27 || n.next.cardValue == 28) {
 					deckRear = n;
 					return;
 				}
@@ -187,6 +187,23 @@ public class Solitaire {
 	 */
 	void countCut() {		
 		// COMPLETE THIS METHOD
+		int count = deckRear.cardValue;
+		if (count == 27 || count == 28) {
+			return;
+		}
+		
+		CardNode startSplit = deckRear.next;
+		CardNode endSplit = deckRear;
+		for (int i = 0; i < count; i++) {
+			endSplit = endSplit.next;
+		}
+		
+		CardNode secondToLast = deckRear;
+		for (secondToLast = deckRear; secondToLast.next != deckRear; secondToLast = secondToLast.next);
+		
+		deckRear.next = endSplit.next;
+		endSplit.next = deckRear;
+		secondToLast.next = startSplit;
 		
 	}
 	
@@ -199,9 +216,29 @@ public class Solitaire {
 	 * @return Key between 1 and 26
 	 */
 	int getKey() {
+		while (true) {
+			jokerA();
+			jokerB();
+			tripleCut();
+			countCut();
+			
+			int n = deckRear.next.cardValue;
+			n = Math.min(n, 27);
+			CardNode keyCard = deckRear;
+			for (int i = 0; i < n + 1; i++) {
+				keyCard = keyCard.next;
+			}
+			if (keyCard.cardValue != 27 && keyCard.cardValue != 28) {
+				return keyCard.cardValue;
+			}
+			else {
+				continue;
+			}
+			
+		}
 		// COMPLETE THIS METHOD
 		// THE FOLLOWING LINE HAS BEEN ADDED TO MAKE THE METHOD COMPILE
-	    return -1;
+	    
 	}
 	
 	/**
@@ -231,13 +268,32 @@ public class Solitaire {
 	public String encrypt(String message) {	
 		// COMPLETE THIS METHOD
 	    // THE FOLLOWING LINE HAS BEEN ADDED TO MAKE THE METHOD COMPILE
-	    System.out.println(deckRear.cardValue);
-		printList(deckRear);
-	    tripleCut();
-	    System.out.println(deckRear.cardValue);
-
-	    printList(deckRear);
-		return null;
+	    char[] encrypted = new char[message.length()];
+	    int lastFilledIndex = 0;
+		
+	    for (int i = 0; i < message.length(); i++) {
+	    	int ascii = (int) message.charAt(i);
+	    	
+	    	if (ascii >= 'A' && ascii <='Z') {
+	    		int key = getKey();
+	    		
+	    		int charPosition = ascii - 'A' + 1;
+	    		int finalPos;
+	    		if (charPosition + key > 26) {
+	    			finalPos = charPosition + key - 26;
+	    		}
+	    		else {
+	    			finalPos = charPosition + key;
+	    		}
+	    		//System.out.println(charPosition + ": " + key + " = " + ((charPosition + key) % 26));
+	    		encrypted [lastFilledIndex] = (char) (finalPos + 'A' - 1);
+	    		lastFilledIndex++;
+	    	}
+	    }
+		String answer = new String(encrypted);
+		answer.trim();
+		
+		return answer;
 	}
 	
 	/**
@@ -249,6 +305,32 @@ public class Solitaire {
 	public String decrypt(String message) {	
 		// COMPLETE THIS METHOD
 	    // THE FOLLOWING LINE HAS BEEN ADDED TO MAKE THE METHOD COMPILE
-	    return null;
+		char[] decrypted = new char[message.length()];
+	    int lastFilledIndex = 0;
+		
+	    for (int i = 0; i < message.length(); i++) {
+	    	int ascii = (int) message.charAt(i);
+	    	
+	    	
+    		int key = getKey();
+    		
+    		int charPosition = ascii - 'A' + 1;
+    		int finalPos;
+    		if (charPosition <= key) {
+    			finalPos = charPosition - key + 26;
+    		}
+    		else {
+    			finalPos = charPosition - key;
+    		}
+    		//System.out.println(charPosition + ": " + key + " = " + finalPos);
+    		decrypted [lastFilledIndex] = (char) (finalPos + 'A' -1);
+    		lastFilledIndex++;
+	    	
+	    }
+		String answer = new String(decrypted);
+		answer.trim();
+		
+		return answer;
+	    //return null;
 	}
 }
