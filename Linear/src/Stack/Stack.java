@@ -12,8 +12,8 @@ public class Stack<T extends Comparable<T>> {
 	 */
 	Node<T> head;
 	
-	public boolean isEmpty () {
-		return head==null;
+	public Stack() {
+		head = null;
 	}
 	
 	public void push(T data) {
@@ -22,15 +22,20 @@ public class Stack<T extends Comparable<T>> {
 		head = n;
 	}
 	
-	public T pop() {
+	public T pop() throws NoSuchElementException {
 		if (head == null) throw new NoSuchElementException();
 		T popped = head.data;
 		head = head.next;
 		return popped;
 	}
 	
-	public T peek() {
-		if (head == null) return null;
+	public T peek() throws NoSuchElementException {
+		if (head == null) throw new NoSuchElementException();
 		return head.data;
 	}
+
+	public boolean isEmpty () {
+		return head == null;
+	}
+	
 }
