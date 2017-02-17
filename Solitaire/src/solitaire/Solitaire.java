@@ -285,7 +285,6 @@ public class Solitaire {
 	    		else {
 	    			finalPos = charPosition + key;
 	    		}
-	    		//System.out.println(charPosition + ": " + key + " = " + ((charPosition + key) % 26));
 	    		encrypted [lastFilledIndex] = (char) (finalPos + 'A' - 1);
 	    		lastFilledIndex++;
 	    	}
@@ -322,7 +321,6 @@ public class Solitaire {
     		else {
     			finalPos = charPosition - key;
     		}
-    		//System.out.println(charPosition + ": " + key + " = " + finalPos);
     		decrypted [lastFilledIndex] = (char) (finalPos + 'A' -1);
     		lastFilledIndex++;
 	    	
@@ -331,6 +329,5 @@ public class Solitaire {
 		answer.trim();
 		
 		return answer;
-	    //return null;
 	}
 }
