@@ -18,3 +18,16 @@
 2017-02-08 17:22:55,520 [Worker-1] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
 2017-02-11 21:13:34,253 [Worker-2] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
 2017-02-12 01:02:29,279 [Worker-1] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2017-02-12 20:39:51,917 [Worker-1] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2017-02-12 20:48:10,482 [Start Help Server] INFO  org.eclipse.jetty.util.log - Logging initialized @552730ms
+2017-02-12 20:48:11,054 [Start Help Server] INFO  org.eclipse.jetty.server.Server - jetty-9.3.9.v20160517
+2017-02-12 20:48:11,233 [Start Help Server] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@7273d222{/help,null,AVAILABLE}
+2017-02-12 20:48:11,289 [Start Help Server] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@71f7e545{HTTP/1.1,[http/1.1]}{127.0.0.1:62901}
+2017-02-12 20:48:11,290 [Start Help Server] INFO  org.eclipse.jetty.server.Server - Started @553538ms
+2017-02-12 22:41:50,002 [Stop Help Server] INFO  o.e.jetty.server.AbstractConnector - Stopped ServerConnector@71f7e545{HTTP/1.1,[http/1.1]}{127.0.0.1:0}
+2017-02-12 22:41:50,017 [Stop Help Server] INFO  o.e.j.server.handler.ContextHandler - Stopped o.e.j.s.ServletContextHandler@7273d222{/help,null,UNAVAILABLE}
+2017-02-12 22:47:02,358 [Worker-0] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2017-02-27 20:16:12,926 [Worker-2] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2017-03-02 00:13:53,711 [Worker-2] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2017-03-03 15:59:48,835 [Worker-1] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2017-03-10 17:10:07,224 [Worker-2] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
