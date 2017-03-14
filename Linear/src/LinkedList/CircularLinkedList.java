@@ -1,5 +1,4 @@
 package LinkedList;
-
 public class CircularLinkedList<T extends Comparable<T>> {
 	Node<T> tail;
 	

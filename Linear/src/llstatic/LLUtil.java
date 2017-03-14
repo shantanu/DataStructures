@@ -1,5 +1,4 @@
 package llstatic;
-
 public class LLUtil {
 	
 	public static Node addToFront(Node head, int data){

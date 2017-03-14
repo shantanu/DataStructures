@@ -2,7 +2,7 @@ package Stack;
 
 public class Postfix {
 	public static void main (String[] args) {
-		System.out.println(postfixEvaluate("2 3 4 - * 5 /"));
+		System.out.println(postfixEvaluate("2"));
 	}
 	
 	public static float postfixEvaluate(String expr) {

@@ -717,21 +717,32 @@ org.eclipse.recommenders.utils.Logs$LogTraceException
 	at com.google.common.util.concurrent.AbstractIdleService$2$1.run(AbstractIdleService.java:54)
 	at com.google.common.util.concurrent.Callables$3.run(Callables.java:93)
 	at java.lang.Thread.run(Thread.java:745)
+<<<<<<< HEAD
 !SESSION 2017-02-12 20:38:58.404 -----------------------------------------------
 eclipse.buildId=4.6.2.M20161124-1400
 java.version=1.8.0_66
+=======
+!SESSION 2017-02-14 15:26:16.707 -----------------------------------------------
+eclipse.buildId=4.6.2.M20161124-1400
+java.version=1.8.0_121
+>>>>>>> ef30db4e5dade682f6dc5cfb54c8bdb4c6e9bf7f
 java.vendor=Oracle Corporation
 BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
 Framework arguments:  -product org.eclipse.epp.package.java.product
 Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
 
+<<<<<<< HEAD
 !ENTRY org.eclipse.egit.ui 2 0 2017-02-12 20:39:52.525
+=======
+!ENTRY org.eclipse.egit.ui 2 0 2017-02-14 15:27:17.034
+>>>>>>> ef30db4e5dade682f6dc5cfb54c8bdb4c6e9bf7f
 !MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
 user global configuration and to define the default location to store repositories: 'C:\Users\shant'. If this is
 not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
 EGit might behave differently since they see different configuration options.
 This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
 
+<<<<<<< HEAD
 !ENTRY org.eclipse.egit.ui 4 0 2017-02-12 20:50:40.949
 !MESSAGE The process cannot access the file because another process has locked a portion of the file
 !STACK 0
@@ -762,25 +773,112 @@ java.io.IOException: The process cannot access the file because another process 
 !SESSION 2017-02-12 22:46:46.705 -----------------------------------------------
 eclipse.buildId=4.6.2.M20161124-1400
 java.version=1.8.0_66
+=======
+!ENTRY org.eclipse.oomph.setup.ui 1 0 2017-02-14 15:27:28.294
+!MESSAGE Setup tasks were performed during startup updating 5 preferences. See 'C:\Users\shant\eclipse\java-neon\eclipse\configuration\org.eclipse.oomph.setup\setup.log' for details
+!SESSION 2017-02-15 17:20:40.117 -----------------------------------------------
+eclipse.buildId=4.6.2.M20161124-1400
+java.version=1.8.0_121
 java.vendor=Oracle Corporation
 BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
 Framework arguments:  -product org.eclipse.epp.package.java.product
 Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
 
-!ENTRY org.eclipse.egit.ui 2 0 2017-02-12 22:47:02.729
+!ENTRY org.eclipse.egit.ui 2 0 2017-02-15 17:26:15.260
 !MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
 user global configuration and to define the default location to store repositories: 'C:\Users\shant'. If this is
 not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
 EGit might behave differently since they see different configuration options.
 This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
-!SESSION 2017-02-27 20:14:23.359 -----------------------------------------------
+
+!ENTRY org.eclipse.oomph.setup.ui 1 0 2017-02-15 17:26:22.668
+!MESSAGE Setup tasks were performed during startup updating 5 preferences. See 'C:\Users\shant\eclipse\java-neon\eclipse\configuration\org.eclipse.oomph.setup\setup.log' for details
+
+!ENTRY org.eclipse.recommenders.types.rcp 1 4 2017-02-15 17:41:35.304
+!MESSAGE Full project indexing required:
+  [+] C:\Program Files\Java\jre1.8.0_121\lib\charsets.jar
+  [+] C:\Program Files\Java\jre1.8.0_121\lib\ext\access-bridge-64.jar
+  [+] C:\Program Files\Java\jre1.8.0_121\lib\ext\cldrdata.jar
+  [+] C:\Program Files\Java\jre1.8.0_121\lib\ext\dnsns.jar
+  [+] C:\Program Files\Java\jre1.8.0_121\lib\ext\jaccess.jar
+  [+] C:\Program Files\Java\jre1.8.0_121\lib\ext\jfxrt.jar
+  [+] C:\Program Files\Java\jre1.8.0_121\lib\ext\localedata.jar
+  [+] C:\Program Files\Java\jre1.8.0_121\lib\ext\nashorn.jar
+  [+] C:\Program Files\Java\jre1.8.0_121\lib\ext\sunec.jar
+  [+] C:\Program Files\Java\jre1.8.0_121\lib\ext\sunjce_provider.jar
+  [+] C:\Program Files\Java\jre1.8.0_121\lib\ext\sunmscapi.jar
+  [+] C:\Program Files\Java\jre1.8.0_121\lib\ext\sunpkcs11.jar
+  [+] C:\Program Files\Java\jre1.8.0_121\lib\ext\zipfs.jar
+  [+] C:\Program Files\Java\jre1.8.0_121\lib\jce.jar
+  [+] C:\Program Files\Java\jre1.8.0_121\lib\jfr.jar
+  [+] C:\Program Files\Java\jre1.8.0_121\lib\jsse.jar
+  [+] C:\Program Files\Java\jre1.8.0_121\lib\resources.jar
+  [+] C:\Program Files\Java\jre1.8.0_121\lib\rt.jar
+  [-] C:\Program Files\Java\jdk1.8.0_66\jre\lib\ext\access-bridge-64.jar
+  [-] C:\Program Files\Java\jdk1.8.0_66\jre\lib\ext\localedata.jar
+  [-] C:\Program Files\Java\jdk1.8.0_66\jre\lib\jce.jar
+  [-] C:\Program Files\Java\jdk1.8.0_66\jre\lib\jfr.jar
+  [-] C:\Program Files\Java\jdk1.8.0_66\jre\lib\ext\sunec.jar
+  [-] C:\Program Files\Java\jdk1.8.0_66\jre\lib\ext\nashorn.jar
+  [-] C:\Program Files\Java\jdk1.8.0_66\jre\lib\rt.jar
+  [-] C:\Program Files\Java\jdk1.8.0_66\jre\lib\ext\cldrdata.jar
+  [-] C:\Program Files\Java\jdk1.8.0_66\jre\lib\ext\sunjce_provider.jar
+  [-] C:\Program Files\Java\jdk1.8.0_66\jre\lib\resources.jar
+  [-] C:\Program Files\Java\jdk1.8.0_66\jre\lib\ext\sunpkcs11.jar
+  [-] C:\Program Files\Java\jdk1.8.0_66\jre\lib\ext\jaccess.jar
+  [-] C:\Program Files\Java\jdk1.8.0_66\jre\lib\ext\sunmscapi.jar
+  [-] C:\Program Files\Java\jdk1.8.0_66\jre\lib\ext\zipfs.jar
+  [-] C:\Program Files\Java\jdk1.8.0_66\jre\lib\charsets.jar
+  [-] C:\Program Files\Java\jdk1.8.0_66\jre\lib\ext\jfxrt.jar
+  [-] C:\Program Files\Java\jdk1.8.0_66\jre\lib\ext\dnsns.jar
+  [-] C:\Program Files\Java\jdk1.8.0_66\jre\lib\jsse.jar
+
+!STACK 0
+org.eclipse.recommenders.utils.Logs$LogTraceException
+	at org.eclipse.recommenders.utils.Logs$LogTraceException.newTrace(Logs.java:381)
+	at org.eclipse.recommenders.utils.Logs.log(Logs.java:134)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.needsRebuild(ProjectTypesIndex.java:169)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.startUp(ProjectTypesIndex.java:122)
+	at com.google.common.util.concurrent.AbstractIdleService$2$1.run(AbstractIdleService.java:54)
+	at com.google.common.util.concurrent.Callables$3.run(Callables.java:93)
+	at java.lang.Thread.run(Unknown Source)
+!SESSION 2017-02-16 15:45:15.820 -----------------------------------------------
 eclipse.buildId=4.6.2.M20161124-1400
-java.version=1.8.0_66
+java.version=1.8.0_121
+>>>>>>> ef30db4e5dade682f6dc5cfb54c8bdb4c6e9bf7f
 java.vendor=Oracle Corporation
 BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
 Framework arguments:  -product org.eclipse.epp.package.java.product
 Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
 
+<<<<<<< HEAD
+!ENTRY org.eclipse.egit.ui 2 0 2017-02-12 22:47:02.729
+=======
+!ENTRY org.eclipse.egit.ui 2 0 2017-02-16 15:45:34.415
+>>>>>>> ef30db4e5dade682f6dc5cfb54c8bdb4c6e9bf7f
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\shant'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+<<<<<<< HEAD
+!SESSION 2017-02-27 20:14:23.359 -----------------------------------------------
+eclipse.buildId=4.6.2.M20161124-1400
+java.version=1.8.0_66
+=======
+
+!ENTRY org.eclipse.oomph.setup.ui 1 0 2017-02-16 15:45:45.528
+!MESSAGE Setup tasks were performed during startup updating 5 preferences. See 'C:\Users\shant\eclipse\java-neon\eclipse\configuration\org.eclipse.oomph.setup\setup.log' for details
+!SESSION 2017-02-16 16:18:57.870 -----------------------------------------------
+eclipse.buildId=4.6.2.M20161124-1400
+java.version=1.8.0_121
+>>>>>>> ef30db4e5dade682f6dc5cfb54c8bdb4c6e9bf7f
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+<<<<<<< HEAD
 !ENTRY org.eclipse.osgi 2 0 2017-02-27 20:15:13.390
 !MESSAGE While loading class "org.eclipse.egit.ui.internal.ConfigurationChecker$1$1", thread "Thread[Worker-2,5,main]" timed out waiting (5003ms) for thread "Thread[main,6,main]" to finish starting bundle "org.eclipse.egit.ui_4.4.1.201607150455-r [124]". To avoid deadlock, thread "Thread[Worker-2,5,main]" is proceeding but "org.eclipse.egit.ui.internal.ConfigurationChecker$1$1" may not be fully initialized.
 !STACK 0
@@ -820,12 +918,33 @@ java.util.concurrent.TimeoutException: Timeout after waiting 5 seconds to acquir
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
 
 !ENTRY org.eclipse.egit.ui 2 0 2017-02-27 20:16:13.490
+=======
+!ENTRY org.eclipse.egit.ui 2 0 2017-02-16 16:19:08.637
 !MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
 user global configuration and to define the default location to store repositories: 'C:\Users\shant'. If this is
 not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
 EGit might behave differently since they see different configuration options.
 This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
 
+!ENTRY org.eclipse.oomph.setup.ui 1 0 2017-02-16 16:19:13.031
+!MESSAGE Setup tasks were performed during startup updating 5 preferences. See 'C:\Users\shant\eclipse\java-neon\eclipse\configuration\org.eclipse.oomph.setup\setup.log' for details
+!SESSION 2017-02-16 23:02:09.202 -----------------------------------------------
+eclipse.buildId=4.6.2.M20161124-1400
+java.version=1.8.0_121
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product -product org.eclipse.epp.package.java.product -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product -product org.eclipse.epp.package.java.product -data C:\Users\shant\Programming\DataStructures\ -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2017-02-16 23:02:22.338
+>>>>>>> ef30db4e5dade682f6dc5cfb54c8bdb4c6e9bf7f
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\shant'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+<<<<<<< HEAD
 !ENTRY org.eclipse.equinox.p2.engine 4 4 2017-02-27 20:33:33.978
 !MESSAGE An error occurred while collecting items to be installed
 !SUBENTRY 1 org.eclipse.equinox.p2.engine 4 0 2017-02-27 20:33:33.978
@@ -955,6 +1074,48 @@ org.eclipse.recommenders.utils.Logs$LogTraceException
   [+] C:\Program Files\Java\jdk1.8.0_66\jre\lib\jsse.jar
   [+] C:\Program Files\Java\jdk1.8.0_66\jre\lib\resources.jar
   [+] C:\Program Files\Java\jdk1.8.0_66\jre\lib\rt.jar
+=======
+!ENTRY org.eclipse.oomph.setup.ui 1 0 2017-02-16 23:02:27.563
+!MESSAGE Setup tasks were performed during startup updating 5 preferences. See 'C:\Users\shant\eclipse\java-neon\eclipse\configuration\org.eclipse.oomph.setup\setup.log' for details
+!SESSION 2017-02-21 15:11:43.285 -----------------------------------------------
+eclipse.buildId=4.6.2.M20161124-1400
+java.version=1.8.0_121
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2017-02-21 15:12:00.879
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\shant'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.oomph.setup.ui 1 0 2017-02-21 15:12:11.314
+!MESSAGE Setup tasks were performed during startup updating 5 preferences. See 'C:\Users\shant\eclipse\java-neon\eclipse\configuration\org.eclipse.oomph.setup\setup.log' for details
+
+!ENTRY org.eclipse.recommenders.types.rcp 1 4 2017-02-21 16:36:10.102
+!MESSAGE Full project indexing required:
+  [+] C:\Program Files\Java\jre1.8.0_121\lib\charsets.jar
+  [+] C:\Program Files\Java\jre1.8.0_121\lib\ext\access-bridge-64.jar
+  [+] C:\Program Files\Java\jre1.8.0_121\lib\ext\cldrdata.jar
+  [+] C:\Program Files\Java\jre1.8.0_121\lib\ext\dnsns.jar
+  [+] C:\Program Files\Java\jre1.8.0_121\lib\ext\jaccess.jar
+  [+] C:\Program Files\Java\jre1.8.0_121\lib\ext\jfxrt.jar
+  [+] C:\Program Files\Java\jre1.8.0_121\lib\ext\localedata.jar
+  [+] C:\Program Files\Java\jre1.8.0_121\lib\ext\nashorn.jar
+  [+] C:\Program Files\Java\jre1.8.0_121\lib\ext\sunec.jar
+  [+] C:\Program Files\Java\jre1.8.0_121\lib\ext\sunjce_provider.jar
+  [+] C:\Program Files\Java\jre1.8.0_121\lib\ext\sunmscapi.jar
+  [+] C:\Program Files\Java\jre1.8.0_121\lib\ext\sunpkcs11.jar
+  [+] C:\Program Files\Java\jre1.8.0_121\lib\ext\zipfs.jar
+  [+] C:\Program Files\Java\jre1.8.0_121\lib\jce.jar
+  [+] C:\Program Files\Java\jre1.8.0_121\lib\jfr.jar
+  [+] C:\Program Files\Java\jre1.8.0_121\lib\jsse.jar
+  [+] C:\Program Files\Java\jre1.8.0_121\lib\resources.jar
+  [+] C:\Program Files\Java\jre1.8.0_121\lib\rt.jar
+>>>>>>> ef30db4e5dade682f6dc5cfb54c8bdb4c6e9bf7f
 
 !STACK 0
 org.eclipse.recommenders.utils.Logs$LogTraceException
@@ -964,6 +1125,7 @@ org.eclipse.recommenders.utils.Logs$LogTraceException
 	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.startUp(ProjectTypesIndex.java:122)
 	at com.google.common.util.concurrent.AbstractIdleService$2$1.run(AbstractIdleService.java:54)
 	at com.google.common.util.concurrent.Callables$3.run(Callables.java:93)
+<<<<<<< HEAD
 	at java.lang.Thread.run(Thread.java:745)
 
 !ENTRY org.eclipse.jdt.debug 4 125 2017-03-01 00:56:03.491
@@ -1149,18 +1311,29 @@ org.eclipse.core.internal.resources.ResourceException: Marker id 450 not found.
 !SESSION 2017-03-02 00:13:17.103 -----------------------------------------------
 eclipse.buildId=4.6.2.M20161124-1400
 java.version=1.8.0_66
+=======
+	at java.lang.Thread.run(Unknown Source)
+!SESSION 2017-02-23 14:42:47.847 -----------------------------------------------
+eclipse.buildId=4.6.2.M20161124-1400
+java.version=1.8.0_121
+>>>>>>> ef30db4e5dade682f6dc5cfb54c8bdb4c6e9bf7f
 java.vendor=Oracle Corporation
 BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
 Framework arguments:  -product org.eclipse.epp.package.java.product
 Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
 
+<<<<<<< HEAD
 !ENTRY org.eclipse.egit.ui 2 0 2017-03-02 00:13:54.275
+=======
+!ENTRY org.eclipse.egit.ui 2 0 2017-02-23 14:43:07.494
+>>>>>>> ef30db4e5dade682f6dc5cfb54c8bdb4c6e9bf7f
 !MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
 user global configuration and to define the default location to store repositories: 'C:\Users\shant'. If this is
 not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
 EGit might behave differently since they see different configuration options.
 This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
 
+<<<<<<< HEAD
 !ENTRY org.eclipse.equinox.p2.engine 4 4 2017-03-02 00:55:35.873
 !MESSAGE An error occurred while collecting items to be installed
 !SUBENTRY 1 org.eclipse.equinox.p2.engine 4 0 2017-03-02 00:55:35.873
@@ -1253,18 +1426,30 @@ This warning can be switched off on the Team > Git > Confirmations and Warnings 
 !SESSION 2017-03-03 15:59:10.513 -----------------------------------------------
 eclipse.buildId=4.6.2.M20161124-1400
 java.version=1.8.0_66
+=======
+!ENTRY org.eclipse.oomph.setup.ui 1 0 2017-02-23 14:43:16.082
+!MESSAGE Setup tasks were performed during startup updating 5 preferences. See 'C:\Users\shant\eclipse\java-neon\eclipse\configuration\org.eclipse.oomph.setup\setup.log' for details
+!SESSION 2017-02-23 15:36:26.112 -----------------------------------------------
+eclipse.buildId=4.6.2.M20161124-1400
+java.version=1.8.0_121
+>>>>>>> ef30db4e5dade682f6dc5cfb54c8bdb4c6e9bf7f
 java.vendor=Oracle Corporation
 BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
 Framework arguments:  -product org.eclipse.epp.package.java.product
 Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
 
+<<<<<<< HEAD
 !ENTRY org.eclipse.egit.ui 2 0 2017-03-03 15:59:48.979
+=======
+!ENTRY org.eclipse.egit.ui 2 0 2017-02-23 15:36:38.955
+>>>>>>> ef30db4e5dade682f6dc5cfb54c8bdb4c6e9bf7f
 !MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
 user global configuration and to define the default location to store repositories: 'C:\Users\shant'. If this is
 not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
 EGit might behave differently since they see different configuration options.
 This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
 
+<<<<<<< HEAD
 !ENTRY org.eclipse.equinox.p2.engine 4 4 2017-03-03 19:30:14.963
 !MESSAGE An error occurred while collecting items to be installed
 !SUBENTRY 1 org.eclipse.equinox.p2.engine 4 0 2017-03-03 19:30:14.963
@@ -1357,14 +1542,31 @@ This warning can be switched off on the Team > Git > Confirmations and Warnings 
 !SESSION 2017-03-10 17:09:18.399 -----------------------------------------------
 eclipse.buildId=4.6.2.M20161124-1400
 java.version=1.8.0_66
+=======
+!ENTRY org.eclipse.oomph.setup.ui 1 0 2017-02-23 15:36:43.372
+!MESSAGE Setup tasks were performed during startup updating 5 preferences. See 'C:\Users\shant\eclipse\java-neon\eclipse\configuration\org.eclipse.oomph.setup\setup.log' for details
+!SESSION 2017-03-02 19:16:56.138 -----------------------------------------------
+eclipse.buildId=4.6.2.M20161124-1400
+java.version=1.8.0_121
+>>>>>>> ef30db4e5dade682f6dc5cfb54c8bdb4c6e9bf7f
 java.vendor=Oracle Corporation
 BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
 Framework arguments:  -product org.eclipse.epp.package.java.product
 Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
 
+<<<<<<< HEAD
 !ENTRY org.eclipse.egit.ui 2 0 2017-03-10 17:10:06.730
+=======
+!ENTRY org.eclipse.egit.ui 2 0 2017-03-02 19:17:15.761
+>>>>>>> ef30db4e5dade682f6dc5cfb54c8bdb4c6e9bf7f
 !MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
 user global configuration and to define the default location to store repositories: 'C:\Users\shant'. If this is
 not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
 EGit might behave differently since they see different configuration options.
 This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+<<<<<<< HEAD
+=======
+
+!ENTRY org.eclipse.oomph.setup.ui 1 0 2017-03-02 19:17:24.616
+!MESSAGE Setup tasks were performed during startup updating 5 preferences. See 'C:\Users\shant\eclipse\java-neon\eclipse\configuration\org.eclipse.oomph.setup\setup.log' for details
+>>>>>>> ef30db4e5dade682f6dc5cfb54c8bdb4c6e9bf7f
