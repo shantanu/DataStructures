@@ -1,0 +1,14 @@
+package search;
+
+import java.io.FileNotFoundException;
+
+public class SearchEngineDriver {
+
+	public static void main(String[] args) throws FileNotFoundException {
+		// TODO Auto-generated method stub
+		LittleSearchEngine lse = new LittleSearchEngine();
+		lse.makeIndex("docs.txt", "noisewords.txt");
+		System.out.println(lse.getKeyWord("Between"));
+	}
+
+}

@@ -1,0 +1,30 @@
+import java.util.*;
+public class computeBinary {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println(computeBinary(52));
+	}
+	
+	public static String computeBinary (int val)  {
+		int log = (int) (Math.log10(val)/Math.log10(2.0));
+	    System.out.println(log);
+
+	    StringBuilder sb = new StringBuilder();
+	    while (log >= 0) {
+	        if (val <= Math.pow(2, log)) {
+	            sb.append("1");
+	            val -= Math.pow(2, log);
+	        }
+	        else {
+	            sb.append("0");
+	        }
+	        log--;
+	    }
+	    
+	    return sb.toString();
+
+
+	}
+
+}

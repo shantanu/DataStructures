@@ -1,0 +1,19 @@
+package search;
+
+import java.io.FileNotFoundException;
+import java.util.HashMap;
+
+public class SearchEngineDriver {
+
+	public static void main(String[] args) throws FileNotFoundException {
+		// TODO Auto-generated method stub
+		LittleSearchEngine lse = new LittleSearchEngine();
+		/*HashMap <String, Occurrence> hm = lse.loadKeyWords("AliceCh1.txt");
+		for (String s: hm.keySet()) {
+			System.out.println(s + ": " + hm.get(s).frequency);
+		}*/
+		lse.makeIndex("docs.txt", "noisewords.txt");
+		//System.out.println(lse.getKeyWord("Between"));
+	}
+
+}
